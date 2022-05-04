@@ -17,37 +17,53 @@
         <div>
             <nav>
                 <ul>
-                    <li class="nav__item"><a target="_blank" href="https://github.com/ElivanLimaJunior">GitHub</a></li>
-                    <li class="nav__item"><a target="_blank" href="mailto:elivanlimajunior@gmail.com">E-mail</a></li>
-                    <li class="nav__item"><a target="_blank" href="https://wa.me/11999999999">Whatsapp</a></li>
+                    <li class="nav__item">
+                        <a target="_blank" href="https://github.com/ElivanLimaJunior"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </li>
+                    <li class="nav__item">
+                        <a target="_blank" href="mailto:elivanlimajunior@gmail.com"><i class="fa-regular fa-envelope"></i> E-mail</a>
+                    </li>
+                    <li class="nav__item">
+                        <a target="_blank" href="https://wa.me/11999999999"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="container">
-        <div class="name">
-            <h1>Elivan Junior</h1>
-            <h5>Front-End Developer</h5>
-        </div>
-        <div id="arrow">
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-        <div id="about">
-            <p>
-                Sou Elivan, tenho 24 anos, e estou avançando meus conhecimentos em desenvolvedor front-end. Atualmente estou em busca de uma oportunidade de trabalho na área de tecnologia. Comecei cursando Administração no começo de minha carreira profissional, atuei como aprendiz administrativo na área de engenharia e estagiei em uma empresa de logística para completar a faculdade.
-            </p>
-        </div>
-
-        <div class="form">
-            <div>
-                <p>Deixei seu contato!</p>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Elivan Junior</h1>
+                <h5>Front-End Developer</h5>
             </div>
-            <form action="">
-                <input type="text" placeholder="Seu melhor email :)">
-                <button>Enviar!</button>
-            </form>
-        </div>
-    </section>
-    <footer>    </footer>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <div style="display: none;" id="about">
+                <p>
+                    Sou Elivan, tenho 24 anos, e estou avançando meus conhecimentos em desenvolvedor front-end. Atualmente estou em busca de uma oportunidade de trabalho na área de tecnologia. Tenho conhecimento intermédiario em HTML, CSS e JavaScript. Estou a cada dia dando tudo de min para me tornar um Dev Front-End que o mercado espera.
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixei seu contato!</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu melhor email :)">
+                    <button>Enviar!</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout () {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
