@@ -89,6 +89,9 @@ header ul li a:hover {
 #about p {
     max-width: 700px;
     margin: 0 auto;
+    background-color: rgba(37, 36, 36, 0.342);
+    padding: 10px;
+    border-radius: 5px;
 }
 
 /*Formulário*/
